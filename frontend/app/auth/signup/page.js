@@ -5,7 +5,7 @@ export default function page() {
     <div>
       <section class="bg-gray-50 dark:bg-gray-900">
   <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
-      <a href="#" class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
+      <a href="/" class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
           <img class="w-8 h-8 mr-2" src="/logo.svg" alt="logo"/>
           SnapSummary    
       </a>
@@ -37,7 +37,7 @@ export default function page() {
                   </div>
                   <button type="submit" class="w-full text-white bg-orange-600 hover:bg-orange-700 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800">Create an account</button>
                   <p class="text-sm font-light text-gray-500 dark:text-gray-400">
-                      Already have an account? <a href="#" class="font-medium text-orange-600 hover:underline dark:text-orange-500">Login here</a>
+                      Already have an account? <a href="/auth/login" class="font-medium text-orange-600 hover:underline dark:text-orange-500">Login here</a>
                   </p>
               </form>
           </div>
