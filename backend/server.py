@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 from PIL import Image
 from transformers import pipeline
+from flask_cors import CORS
 import torch
 import io
 import google.generativeai as genai
@@ -12,6 +13,9 @@ load_dotenv()
 
 # Initialize the Flask app
 app = Flask(__name__)
+
+# Enable CORS
+CORS(app)
 
 # Check if GPU is available, use device 0 (GPU) if available, else use CPU
 device = 0 if torch.cuda.is_available() else -1
