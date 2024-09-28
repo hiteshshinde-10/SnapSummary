@@ -2,7 +2,6 @@
 import Link from 'next/link'
 import React, { useState, useEffect } from 'react'
 import Cookies from 'js-cookie'
-import { CgProfile } from "react-icons/cg";
 import { useRouter } from 'next/navigation'
 
 export default function Navbar() {
@@ -32,6 +31,13 @@ export default function Navbar() {
         }
     }
 
+    // Handle logout
+    const handleLogout = () => {
+        Cookies.remove('authToken') // Clear the cookie
+        setIsLoggedIn(false) // Update the login state
+        router.push('/') // Redirect to home page
+    }
+
     return (
         <nav className="bg-white dark:bg-gray-900 w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -52,9 +58,12 @@ export default function Navbar() {
                             Get started
                         </Link>
                     ) : (
-                        
-                            <CgProfile className="w-10 h-10 rounded-full" alt="Profile Icon" />
-                        
+                        <button
+                            onClick={handleLogout}
+                            className="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800"
+                        >
+                            Logout
+                        </button>
                     )}
 
                     {/* Mobile Menu Toggle Button */}
@@ -99,11 +108,11 @@ export default function Navbar() {
                         </li>
                         <li>
                             <a
-                                href={isLoggedIn ? '#' : '/auth/login'} // If logged in, stay on the page, otherwise go to login
+                                href={isLoggedIn ? '/tools' : '/auth/login'} // If logged in, stay on the page, otherwise go to login
                                 onClick={handleServiceClick} // Redirect to login if not logged in
                                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-700 md:p-0 md:dark:hover:text-orange-500 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent dark:border-gray-700"
                             >
-                                Services
+                                Tools
                             </a>
                         </li>
                         <li>
