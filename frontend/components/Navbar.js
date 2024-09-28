@@ -44,7 +44,7 @@ export default function Navbar() {
                 {/* Logo and brand name */}
                 <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
                     <img src="/logo.svg" className="h-8" alt="Flowbite Logo" />
-                    <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">SnapSummary</span>
+                    <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">HighlightEase</span>
                 </a>
 
                 {/* Get Started button / Profile Icon and Menu Toggle */}
@@ -101,11 +101,11 @@ export default function Navbar() {
                                 Home
                             </a>
                         </li>
-                        <li>
+                        {/* <li>
                             <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-700 md:p-0 md:dark:hover:text-orange-500 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent dark:border-gray-700">
                                 About
                             </a>
-                        </li>
+                        </li> */}
                         <li>
                             <a
                                 href={isLoggedIn ? '/tools' : '/auth/login'} // If logged in, stay on the page, otherwise go to login
@@ -115,11 +115,11 @@ export default function Navbar() {
                                 Tools
                             </a>
                         </li>
-                        <li>
+                        {/* <li>
                             <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-700 md:p-0 md:dark:hover:text-orange-500 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent dark:border-gray-700">
                                 Contact
                             </a>
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
             </div>
