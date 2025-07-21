@@ -1,5 +1,3 @@
-
-
 # Project Title
 
 HighlightEase 
@@ -13,7 +11,7 @@ states and error handling to ensure smooth and user-friendly interaction during 
 
 ## 📸 Screenshots
 
-![Screenshot](../images/Screenshot%20(310).png)  
-![Screenshot](../images/Screenshot%20(312).png)  
-![Screenshot](../images/Screenshot%20(311).png)  
-![Screenshot](../images/Screenshot%20(313).png)  
+![Screenshot 310](./images/Screenshot%20(310).png)  
+![Screenshot 311](./images/Screenshot%20(311).png)  
+![Screenshot 312](./images/Screenshot%20(312).png)  
+![Screenshot 313](./images/Screenshot%20(313).png)
