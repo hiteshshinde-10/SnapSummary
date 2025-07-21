@@ -1,0 +1,7 @@
+Flask
+Pillow
+flask-cors
+python-dotenv
+google-generativeai
+
+    pip install Flask Pillow flask-cors python-dotenv google-generativeai

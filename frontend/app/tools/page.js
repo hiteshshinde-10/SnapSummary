@@ -10,7 +10,7 @@ export default function page() {
         <>
             <SideBar tab={tab} setTab={setTab}>
                 {tab === 'image-summary' && <ImageSumary />}
-                {tab === 'image-caption' && <ImageCaption />}
+                {/* {tab === 'image-caption' && <ImageCaption />} */}
             </SideBar>
         </>
     )
